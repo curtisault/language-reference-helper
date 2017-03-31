@@ -4,7 +4,8 @@
         {
             try
             {
-                string path = "C:\\" + "AuditRunner\\" + "log\\";
+                //string path = AppDomain.CurrentDomain.BaseDirectory + "App_Data\\" + "log\\"; // finds current root dir for solution. this is if you want to include logs where you're running the app
+                string path = "C:\\" + "rootAppName\\" + "log\\";
                 string debugTraceFile = file + "_" + DateTime.Now.ToShortDateString().Replace("/", "_") + ".txt";
                 FileInfo filepath = new FileInfo(path);
                 if (filepath.Directory != null)
